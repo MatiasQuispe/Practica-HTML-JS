@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuerry</title>
+</head>
+
+<body>
+
+    <h1>Ejemplo de JQuerry</h1>
+
+    <button id="btn-mostrar">Mostrar</button>
+    <button id="btn-ocultar">Ocultar</button>
+    <button id="btn-contenido-txt">Contenido Text</button>
+
+    <p>Hola mundo</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        //$("h1").hide();
+        //$("h1").show();
+        $("h1").css({
+            "color": "red"
+        })
+
+        $("#btn-mostrar").click(function(){
+            $("h1").show();
+        })
+
+        $("#btn-ocultar").click(function(){
+            $("h1").hide();
+        })
+
+        $("#btn-contenido-txt").click(function(){
+            alert(
+                $("p").text()
+            )
+        })
+
+    </script>
+
+    <script src="principal.js"></script>
+</body>
+
+</html>
